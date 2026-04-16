@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '@/App.vue'
-import Every5 from '@/pages/Every5Minutes.vue'
+
+import Home from '../pages/Home.vue'
+import Every5 from '../pages/Every5Minutes.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
