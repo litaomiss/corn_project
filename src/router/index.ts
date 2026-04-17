@@ -6,7 +6,7 @@ import EveryDay from '../pages/EveryDayAtMidnight.vue'
 import EveryWeekdy from '../pages/EveryWeekday.vue'
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes: [
     { path: '/', component: Home },
     { path: '/every-5-minutes', component: Every5 },
