@@ -29,22 +29,22 @@
 import CronBuilder from '../components/CronBuilder.vue'
 import NextRun from '../components/NextRun.vue'
 
-const title = "Cron Expression Every 5 Minutes"
+const title = "Cron Expression Every Day at Midnight"
 
-const intro = "Use this cron expression to run a task every 5 minutes."
+const intro = "Use this cron expression to run a task every day at midnight."
 
-const cron = "*/5 * * * *"
+const cron = "0 0 * * *"
 
-const explanation = "This expression means the task runs every 5 minutes, every hour, every day."
+const explanation = "This expression runs at 00:00 (midnight) every day."
 
 const faq = [
   {
-    q: "What does */5 mean in cron?",
-    a: "It means every 5 units of time, in this case, every 5 minutes."
+    q: "What time is midnight in cron?",
+    a: "Midnight is represented as 0 0 in cron (hour 0, minute 0)."
   },
   {
-    q: "Does this work in Linux crontab?",
-    a: "Yes, this is a standard cron expression supported in Linux."
+    q: "Can I run at 1 minute past midnight?",
+    a: "Yes, use 1 0 * * *."
   }
 ]
 </script>

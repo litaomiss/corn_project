@@ -29,22 +29,22 @@
 import CronBuilder from '../components/CronBuilder.vue'
 import NextRun from '../components/NextRun.vue'
 
-const title = "Cron Expression Every 5 Minutes"
+const title = "Cron Expression Every Weekday"
 
-const intro = "Use this cron expression to run a task every 5 minutes."
+const intro = "Use this cron expression to run a task every weekday (Monday to Friday)."
 
-const cron = "*/5 * * * *"
+const cron = "0 0 * * 1-5"
 
-const explanation = "This expression means the task runs every 5 minutes, every hour, every day."
+const explanation = "This runs at midnight from Monday to Friday."
 
 const faq = [
   {
-    q: "What does */5 mean in cron?",
-    a: "It means every 5 units of time, in this case, every 5 minutes."
+    q: "What does 1-5 mean in cron?",
+    a: "It represents Monday to Friday."
   },
   {
-    q: "Does this work in Linux crontab?",
-    a: "Yes, this is a standard cron expression supported in Linux."
+    q: "Does cron support names like MON-FRI?",
+    a: "Some systems support it, but numbers are more reliable."
   }
 ]
 </script>
