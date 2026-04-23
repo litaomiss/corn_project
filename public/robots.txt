@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://corn-project.vercel.app/sitemap.xml
